@@ -15,11 +15,12 @@ function App() {
          <Routes>
             <Route path="/" element={<Header />}>
                <Route index element={<HomePage />}></Route>
-               <Route path="subjects" element={<SubjectPage />}>
-                  <Route path="tasklist" element={<TaskListPage />}></Route>
+               <Route path="subject/:id" element={<SubjectPage />}>
+                  <Route path="tasklist" element={<TaskListPage />}>
+                     <Route path="tasklist/:id" element={<TaskPage />}></Route>
+                  </Route>
                   <Route path="users" element={<UsersPage />}></Route>
                </Route>
-               <Route path="task" element={<TaskPage />}></Route>
             </Route>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />

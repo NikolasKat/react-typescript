@@ -1,16 +1,11 @@
+import TaskElement from "../components/TaskElement";
+
 function TaskListPage() {
    return (
-      <div>
-         <ul>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-            <li>9</li>
-         </ul>
+      <div className="px-9">
+         {/* <ul>
+            <TaskElement id={1} comments={1} />
+         </ul> */}
       </div>
    );
 }
