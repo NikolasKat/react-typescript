@@ -1,9 +1,9 @@
-import CardElement from "../components/CardElement";
+import { Navigate } from "react-router-dom";
 
 export default function HomePage() {
    return (
       <section className="p-9">
-         <CardElement />
+         <Navigate to="/login" replace />
       </section>
    );
 }

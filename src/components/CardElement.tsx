@@ -8,7 +8,7 @@ function CardElement() {
       <div className="relative flex flex-col justify-between max-w-sm min-h-[250px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
          <div className="p-5 bg-red-200">
             <div className="flex justify-between items-center">
-               <Link to="subject">
+               <Link to="subjects">
                   <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">
                      Subject name
                   </h5>
@@ -17,7 +17,7 @@ function CardElement() {
                   <RxDotsVertical />
                </button>
             </div>
-            <Link to="subject">
+            <Link to="subjects">
                <h6 className="mb-2 text-xl font-medium tracking-tight text-gray-900 dark:text-white">
                   Teacher`s name
                </h6>
