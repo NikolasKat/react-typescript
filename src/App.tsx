@@ -16,9 +16,8 @@ function App() {
             <Route path="/" element={<Header />}>
                <Route index element={<HomePage />}></Route>
                <Route path="subject/:id" element={<SubjectPage />}>
-                  <Route path="tasklist" element={<TaskListPage />}>
-                     <Route path="tasklist/:id" element={<TaskPage />}></Route>
-                  </Route>
+                  <Route path="tasklist" element={<TaskListPage />} />
+                  <Route path="tasklist/task/:id" element={<TaskPage />} />
                   <Route path="users" element={<UsersPage />}></Route>
                </Route>
             </Route>

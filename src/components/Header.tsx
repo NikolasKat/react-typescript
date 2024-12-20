@@ -7,7 +7,7 @@ function Header() {
    const [isClicked, setIsClicked] = useState<boolean>(false);
    return (
       <>
-         <header className="flex justify-between items-center px-9 py-4 text-xl font-medium">
+         <header className="flex justify-between items-center px-9 py-4 text-3xl font-medium">
             <div className="flex items-center gap-9">
                {/* <button>
                   <RxHamburgerMenu />
@@ -19,16 +19,16 @@ function Header() {
                   <img
                      src="https://www.gstatic.com/classroom/logo_square_rounded.svg"
                      alt="Home Page"
-                     className="w-16"
+                     className="w-20"
                   />
-                  <h2>Главная страница</h2>
+                  <h2>Classroom for PWHG</h2> {/*for people who hates Google*/}
                </Link>
                {/* <Link to="subject">SubjectPage</Link> */}
             </div>
             {/* <Link to="task">TaskPage</Link> */}
             <div className="relative">
                <button
-                  className="text-3xl bg-slate-100 rounded-3xl p-3"
+                  className="text-4xl bg-slate-100 rounded-full p-3"
                   onClick={() => {
                      setIsClicked((isCliked) => !isClicked);
                   }}
@@ -36,7 +36,7 @@ function Header() {
                   <RxPlus />
                </button>
                {isClicked ? (
-                  <div className="absolute right-0 top-16 bg-white z-20 p-4 border border-solid border-gray-200">
+                  <div className="absolute right-0 top-16 bg-white z-20 p-4 border border-solid border-gray-200 rounded-lg">
                      <ul className="text-2xl">
                         <button className="bg-white mb-2">
                            Присоединиться

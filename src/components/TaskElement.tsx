@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaBookOpen } from "react-icons/fa";
-import { RxDotsVertical } from "react-icons/rx";
 
 function TaskElement({ id, comments }) {
    return (
